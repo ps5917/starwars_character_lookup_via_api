@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+    color: #ffe81f;
+  }
+  
+  .starWarsLogo {
+    margin-bottom: 2rem;
+  }
+  
+  .characterLookup {
+    margin-bottom: 2rem;
+  }
+  
+  .searchForm {
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchInput {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    margin-right: 1rem;
+    background-color: #ffe81f;
+    color: #000;
+  }
+  
+  .searchButton {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #ffe81f;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }

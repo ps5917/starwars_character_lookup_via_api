@@ -1,0 +1,54 @@
+/* Set up the container and crawl styles */
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.crawlContainer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 200px;
+  height: 100%;
+  perspective: 400px;
+  color: #ffe81f;
+}
+
+.crawl {
+  position: relative;
+  top: 9999px;
+  transform-origin: 50% 100%;
+  animation: crawl 200s linear;
+}
+
+/* Style the character name */
+.characterName {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+/* Add spacing between sections */
+.aboutSection,
+.filmographySection,
+.shipsSection {
+  margin-bottom: 2rem;
+}
+
+/* Define the crawl animation */
+@keyframes crawl {
+  0% {
+    top: 0;
+    transform: rotateX(20deg) translateZ(0);
+  }
+  100% {
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
